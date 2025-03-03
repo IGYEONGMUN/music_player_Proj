@@ -22,6 +22,7 @@ const next = document.querySelector(".btnNext");
 const turtleProgress = document.querySelectorAll(".turtle");
 const progressBars = document.querySelectorAll(".progressBar");
 const currentBars = document.querySelectorAll(".currentBar");
+const rates = document.querySelectorAll(".rate");
 
 // article rotation
 const deg = 45;
@@ -129,6 +130,19 @@ lists.forEach((list) => {
   });
 });
 
+//rates
+rates.forEach((rate) => {
+  rate.addEventListener("click", (e) => {
+    if (rate.closest("article").classList.contains("on")) {
+      const rateaudio = e.currentTarget
+        .closest("article")
+        .querySelector("audio");
+
+      rateaudio.playbackRate = e.target.dataset.rate;
+    }
+  });
+});
+
 // prev, next button event
 let num = 0;
 let active = 0;
@@ -154,7 +168,7 @@ const initMusic = () => {
     if (progressbar.closest("article").classList.contains("on")) {
       progressbar.style.opacity = "1";
     } else {
-      progressbar.style.opacity = "0";
+      // progressbar.style.opacity = "0";
     }
   });
 };

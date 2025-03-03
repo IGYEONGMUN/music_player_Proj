@@ -208,6 +208,17 @@ figure section article .inner .progressBar .currentBar {
   height: 100%;
   background-color: rgb(61, 238, 17);
 }
+figure section article .inner .progressBar .rate {
+  font-size: 1.2rem;
+  margin-top: 15px;
+}
+figure section article .inner .progressBar .rate span {
+  background: #fff;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
 figure .btnPrev {
   width: 60px;
   height: 60px;
