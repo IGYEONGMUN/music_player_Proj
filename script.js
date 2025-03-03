@@ -83,7 +83,7 @@ lists.forEach((list) => {
           if (
             turtle.parentElement.closest("article").classList.contains("on")
           ) {
-            turtle.style.left = `${newWidth}px`;
+            turtle.style.left = `${newWidth - 5}px`;
           }
         });
         currentBars.forEach((currentbar) => {
@@ -181,7 +181,7 @@ prev.addEventListener("click", () => {
   activation(active, lists);
   initMusic();
   turtleProgress.forEach((turtle) => {
-    turtle.style.left = "0px";
+    turtle.style.left = "-5px";
   });
   currentBars.forEach((currentbar) => {
     currentbar.style.width = 0;
@@ -197,7 +197,7 @@ next.addEventListener("click", () => {
   activation(active, lists);
   initMusic();
   turtleProgress.forEach((turtle) => {
-    turtle.style.left = "0px";
+    turtle.style.left = "-5px";
   });
   currentBars.forEach((currentbar) => {
     currentbar.style.width = 0;

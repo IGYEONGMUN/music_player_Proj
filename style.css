@@ -195,6 +195,7 @@ figure section article .inner .progressBar img {
   position: relative;
   top: 50%;
   transform: translateY(-50%) scaleX(-1);
+  left: -5px;
 }
 figure section article .inner .progressBar .progress {
   width: 100%;
